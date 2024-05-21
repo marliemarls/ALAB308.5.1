@@ -84,4 +84,4 @@ let testObj = [
 let ageSort = testObj.sort((a, b) => parseFloat(a.age) - parseFloat(b.age))
 let greaterThan50 = testObj.filter((obj) => obj.age < 50) /** depending on if you want an array of those under 50 or over 50, the greater than or equal signs is up to you */
 
-console.log(ageSort, greaterThan50)
+console.log(ageSort, greaterThan50 )
