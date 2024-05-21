@@ -53,7 +53,7 @@ function largerThan(arr, num) {
 
 }
 
-console.log(largerThan(['say', 'hello', 'in', 'the', 'morning'], 3))
+// console.log(largerThan(['say', 'hello', 'in', 'the', 'morning'], 3))
 
 
 // given a number (n), print every number between 1 & n without using loops. USE RECURSION.
@@ -81,7 +81,7 @@ let testObj = [
   { id: "7", name: "Bilbo", occupation: "None", age: "111" },
 ];
 
-let newArray = testObj.map(obj => Object.values(obj))
+let ageSort = testObj.sort((a, b) => parseFloat(a.age) - parseFloat(b.age))
+let greaterThan50 = testObj.filter((obj) => obj.age < 50) /** depending on if you want an array of those under 50 or over 50, the greater than or equal signs is up to you */
 
-
-console.log(newArray)
+console.log(ageSort, greaterThan50)
