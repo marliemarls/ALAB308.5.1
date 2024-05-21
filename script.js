@@ -50,7 +50,6 @@ function longestStr(arr){
 
 function largerThan(arr, num) {
     return arr.filter((str) => str.length > num)
-
 }
 
 // console.log(largerThan(['say', 'hello', 'in', 'the', 'morning'], 3))
