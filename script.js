@@ -13,6 +13,7 @@ function returnSum(arr) {
 
 // console.log(returnSum(arrayTest))
 
+
 //given an array ofnumbers, return the average of the sum
 function returnAverage(arr) {
     let sum = 0;
@@ -49,30 +50,31 @@ function longestStr(arr){
 function largerThan(arr, num) {
     let newArray = [];
     for(let i = 0; i <= arr.length; i++){
-        const element = arr[i]
-        // console.log(element)
-        
+        while(arr[i] >= num) {
+        newArray.push(arr[i])
+    }
+        return newArray
+
     }
 
 }
 
-// console.log(largerThan(arrayStrings, 3))
+console.log(largerThan(['say', 'hello', 'in', 'the', 'morning'], 3))
 
 
 // given a number (n), print every number between 1 & n without using loops. USE RECURSION.
-
-function everyNumberBetween (num) {
     let count = 1
-    if(count < num){
-        console.log(count)
-        count++  
-    } else {
-        
-    }
+    console.log(count)
+function everyNumberBetween (num) {
     
+    if(count < num ){
+        count++ 
+        console.log(count)
+        everyNumberBetween(num)
+    }
 }
 
-console.log(everyNumberBetween(5))
+// console.log(everyNumberBetween(5))
 
 
 //part 2: Thinking Methodocially 
@@ -88,4 +90,4 @@ let testObj = [
 let newArray = testObj.map(obj => Object.values(obj))
 
 
-console.log(newArray)
+// console.log(newArray)
