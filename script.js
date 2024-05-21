@@ -46,16 +46,10 @@ function longestStr(arr){
 //if the element length is larger than the given number, it will push the element into newArray
 //else it will continue to iterate
 //in the end of the for loop, the function will return the newArray
+//after much research i found decided to do the filter method because i couldnt get my loop to work 
 
 function largerThan(arr, num) {
-    let newArray = [];
-    for(let i = 0; i <= arr.length; i++){
-        while(arr[i] >= num) {
-        newArray.push(arr[i])
-    }
-        return newArray
-
-    }
+    return arr.filter((str) => str.length > num)
 
 }
 
@@ -90,4 +84,4 @@ let testObj = [
 let newArray = testObj.map(obj => Object.values(obj))
 
 
-// console.log(newArray)
+console.log(newArray)
